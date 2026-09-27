@@ -1,0 +1,67 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+*.spec
+.venv/
+venv/
+env/
+ENV/
+.env
+
+# Node / React
+node_modules/
+frontend/dist/
+frontend/build/
+frontend/.vite/
+*.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.suo
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Test / Coverage
+.coverage
+coverage/
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# DB
+*.sqlite
+*.sqlite3
+*.db
+
+# Secrets / Credentials
+*.pem
+*.key
+*.p12
+credentials.json
+token.json
+
+# Misc
+*.bak
+*.tmp
+
+.env

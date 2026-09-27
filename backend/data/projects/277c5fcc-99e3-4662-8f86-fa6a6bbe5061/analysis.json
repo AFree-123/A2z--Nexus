@@ -1,0 +1,77 @@
+{
+  "analyzed_at": "2026-09-27T12:41:44.939989+00:00",
+  "root": "C:\\Users\\afrif\\Downloads\\A2Z-Nexus-FINAL-DARK-VISIBILITY-FIXED\\backend\\data\\projects\\277c5fcc-99e3-4662-8f86-fa6a6bbe5061\\stat-skill-ai",
+  "total_files": 60,
+  "analyzed_files": 57,
+  "lines_of_code": 13580,
+  "functions": 86,
+  "classes": 0,
+  "dependencies": [
+    "package.json"
+  ],
+  "deployment_files": [
+    "vercel.json"
+  ],
+  "test_files": [],
+  "code_health": 100,
+  "maintainability": 82,
+  "complexity_score": 6.7,
+  "complexity": "Medium",
+  "security_score": 100,
+  "test_coverage": null,
+  "file_types": {
+    ".html": 1,
+    ".json": 5,
+    ".js": 3,
+    ".md": 1,
+    ".ts": 10,
+    ".tsx": 36,
+    ".css": 1
+  },
+  "top_files": [
+    {
+      "file": "package-lock.json",
+      "lines": 3160
+    },
+    {
+      "file": "src/pages/Assessment.tsx",
+      "lines": 2119
+    },
+    {
+      "file": "src/pages/AICopilot.tsx",
+      "lines": 1367
+    },
+    {
+      "file": "src/pages/Login.tsx",
+      "lines": 1012
+    },
+    {
+      "file": "src/context/AppContext.tsx",
+      "lines": 956
+    },
+    {
+      "file": "src/data/mockData.ts",
+      "lines": 889
+    },
+    {
+      "file": "src/pages/CourseCatalog.tsx",
+      "lines": 669
+    },
+    {
+      "file": "src/types/index.ts",
+      "lines": 598
+    },
+    {
+      "file": "src/pages/SkillGaps.tsx",
+      "lines": 417
+    },
+    {
+      "file": "src/services/aiService.ts",
+      "lines": 229
+    }
+  ],
+  "issues": [],
+  "recommendations": [],
+  "deployment_readiness": true,
+  "submission_readiness": 100
+}

@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body {
+  margin: 0;
+  background: #f8fafc;
+  color: #111827;
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar { width: 7px; height: 7px; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+
+:focus-visible {
+  outline: 2px solid #2f6df6;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+}
+
+.auth-input {
+  width: 100%;
+  margin-top: 6px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  color: #111827;
+  border-radius: 12px;
+  padding: 11px 12px;
+  font-size: 14px;
+  outline: none;
+}
+.auth-input:focus {
+  border-color: #2f6df6;
+  box-shadow: 0 0 0 3px rgba(47, 109, 246, 0.12);
+}
+
+button, input, textarea { font-family: inherit; }
+.prose-sm pre, pre { border: 1px solid #e5e7eb; }
+/* =========================================
+   A2Z Nexus Logo Animation
+   ========================================= */
+
+.a2z-logo-float {
+  animation: a2zLogoFloat 3s ease-in-out infinite;
+  transform-origin: center;
+  will-change: transform;
+}
+
+@keyframes a2zLogoFloat {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  25% {
+    transform: translateY(-4px) rotate(-1deg);
+  }
+
+  50% {
+    transform: translateY(-8px) rotate(0deg);
+  }
+
+  75% {
+    transform: translateY(-4px) rotate(1deg);
+  }
+
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .a2z-logo-float {
+    animation: none;
+  }
+}
+/* A2Z Nexus dark theme — preserves the existing layout and component design. */
+html.a2z-dark,
+html.a2z-dark body {
+  background: #0b1020 !important;
+  color-scheme: dark;
+}
+html.a2z-dark body {
+  color: #e5e7eb;
+}
+html.a2z-dark .bg-white,
+html.a2z-dark .bg-white\/90,
+html.a2z-dark .bg-white\/85 {
+  background-color: #111827 !important;
+}
+html.a2z-dark [class*="bg-[#f"],
+html.a2z-dark [class*="bg-[#e"],
+html.a2z-dark [class*="bg-[#eef"],
+html.a2z-dark [class*="bg-[#f5"] {
+  background-color: #111827 !important;
+}
+html.a2z-dark [class*="text-[#172554"],
+html.a2z-dark [class*="text-[#18214d"],
+html.a2z-dark [class*="text-gray-900"],
+html.a2z-dark [class*="text-[#334155"] {
+  color: #e5e7eb !important;
+}
+html.a2z-dark [class*="border-[#e"],
+html.a2z-dark [class*="border-gray-"] {
+  border-color: #263247 !important;
+}
+html.a2z-dark input,
+html.a2z-dark textarea {
+  background-color: #111827 !important;
+  color: #e5e7eb !important;
+}
+
+/* Sidebar dark-theme visibility fix */
+html.a2z-dark aside {
+  background: linear-gradient(to bottom, #111827, #0f172a) !important;
+  border-color: #263247 !important;
+  color: #e5e7eb !important;
+}
+html.a2z-dark aside [class*="text-[#172554"],
+html.a2z-dark aside [class*="text-[#18214d"],
+html.a2z-dark aside [class*="text-[#334155"],
+html.a2z-dark aside [class*="text-[#64709a"],
+html.a2z-dark aside [class*="text-[#6874a8"],
+html.a2z-dark aside [class*="text-[#7b84a5"],
+html.a2z-dark aside [class*="text-[#8991ad"],
+html.a2z-dark aside [class*="text-[#a0a7bd"] {
+  color: #e5e7eb !important;
+}
+html.a2z-dark aside [class*="bg-white"] {
+  background-color: #182235 !important;
+  border-color: #2b3850 !important;
+}
+html.a2z-dark aside [class*="border-[#e5e8f3"],
+html.a2z-dark aside [class*="border-[#e0e4f0"] {
+  border-color: #263247 !important;
+}
+html.a2z-dark aside button:hover {
+  background-color: #1e293b !important;
+}
